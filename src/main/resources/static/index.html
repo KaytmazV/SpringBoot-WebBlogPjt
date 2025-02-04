@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloglanma</title>
+    <script>
+        if (window.location.port === "63342") {
+            window.location.href = "http://localhost:8096" + window.location.pathname;
+        }
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="rain"></div>
+<div id="lightning"></div>
+<header>
+    <h1>Bloglanma</h1>
+</header>
+<main>
+    <section id="posts">
+        <h2>Gönderiler</h2>
+        <div id="postList"></div>
+        <button id="newPostBtn">Yeni Gönderi</button>
+    </section>
+    <section id="newPost" style="display: none;">
+        <h2>Yeni Gönderi</h2>
+        <form id="postForm">
+            <input type="text" id="postTitle" placeholder="Başlık" required>
+            <input type="text" id="postAuthor" placeholder="Yazar" required>
+            <textarea id="postContent" placeholder="İçerik" required></textarea>
+            <button type="submit">Gönder</button>
+        </form>
+    </section>
+</main>
+<script src="/script.js"></script>
+</body>
+</html>

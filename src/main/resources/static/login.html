@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloglanma - Giriş</title>
+    <script>
+        if (window.location.port === "63342") {
+            window.location.href = "http://localhost:8096" + window.location.pathname;
+        }
+    </script>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="rain"></div>
+<div id="lightning"></div>
+<header>
+    <h1>Bloglanma</h1>
+</header>
+<main>
+    <div class="auth-container">
+        <h2>Giriş Yap</h2>
+        <form id="loginForm" class="auth-form">
+            <input type="text" id="username" placeholder="Kullanıcı Adı" required>
+            <input type="password" id="password" placeholder="Şifre" required>
+            <button type="submit">Giriş Yap</button>
+        </form>
+        <p class="auth-link">Hesabınız yok mu? <a href="/register.html">Kayıt Olun</a></p>
+    </div>
+</main>
+<script src="/auth.js"></script>
+</body>
+</html>
